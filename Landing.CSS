@@ -1,0 +1,49 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ddffff;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Store title styles */
+h1 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: "Bebas Neue", "Montserrat", Arial, Helvetica, sans-serif;
+  background: linear-gradient(90deg, #2d8cf0 40%, #ff6f61 100%);
+  padding: 1em 2em;
+  border-radius: 1em;
+  box-shadow: 0 8px 32px rgba(45, 140, 240, 0.15), 0 2px 8px #ff6f61;
+  border: 2px solid #fff;
+  display: inline-block;
+  animation: popUp 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  transition: background 0.3s, color 0.3s;
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
