@@ -1,3 +1,22 @@
+/* Pretty select dropdown styles */
+select {
+  margin-top: 32px;
+  padding: 0.75em 2em;
+  font-size: 1.1rem;
+  border-radius: 1em;
+  border: 2px solid #2d8cf0;
+  background: #fff;
+  color: #2d8cf0;
+  box-shadow: 0 2px 8px rgba(45, 140, 240, 0.1);
+  outline: none;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+select:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 4px 16px rgba(255, 111, 97, 0.15);
+}
 /* Reset and base styles */
 * {
   box-sizing: border-box;
